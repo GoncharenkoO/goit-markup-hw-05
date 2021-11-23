@@ -1,0 +1,116 @@
+/* Filters section */
+
+.filter {
+  color: #212121;
+}
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.section .item {
+  margin-right: 8px;
+}
+
+.section .item:last-child {
+  margin-right: 0;
+}
+
+.section .item:last-child {
+  margin-right: 0;
+}
+
+.button {
+  padding: 6px 22px 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border-radius: 4px;
+  top: 174px;
+
+  color: var(--primary-text-color);
+  background-color: #f5f4fa;
+  border-color: transparent;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--primary-white-color);
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects .list {
+  width: 370px;
+}
+
+.projects .list:hover,
+.projects .list:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.section .list {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.section .list:nth-child(3n + 3) {
+  margin-right: 0;
+}
+
+.section .list:nth-child(n + 7) {
+  margin-bottom: 0;
+}
+
+.section .list:last-child {
+  margin-right: 0;
+}
+
+.section .list .image {
+  display: block;
+  object-fit: cover;
+}
+
+.project {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+
+  background: #ffffff;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.section .title {
+  margin: 0;
+  margin-bottom: 4px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+
+.section .text {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
