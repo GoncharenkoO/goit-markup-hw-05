@@ -4,6 +4,11 @@
   color: #212121;
 }
 
+.section-filter .project {
+  text-decoration: none;
+  list-style: none;
+}
+
 .filter-list {
   display: flex;
   justify-content: center;
@@ -55,8 +60,8 @@
   width: 370px;
 }
 
-.projects .list:hover,
-.projects .list:focus {
+.image:hover,
+.image:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -88,11 +93,18 @@
   padding-right: 24px;
   padding-left: 24px;
   padding-bottom: 20px;
+  text-decoration: none;
+  list-style: none;
 
   background: #ffffff;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+}
+
+.project .list {
+  text-decoration: none;
+  list-style: none;
 }
 
 .section .title {
@@ -113,4 +125,9 @@
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+
+link {
+  text-decoration: none;
+  list-style: none;
 }

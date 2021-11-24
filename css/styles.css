@@ -4,7 +4,6 @@
   padding: 200px 0;
   background: #2f303a;
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   outline: 1px solid black;
@@ -87,12 +86,12 @@
 
 .section-list-features {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  width: 270px;
+  height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 .section-list .title {
@@ -208,6 +207,7 @@
 .team-info {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: var(--primary-white-color);
 }
 
 .team .name {
@@ -309,8 +309,6 @@
 }
 
 .company-social-item {
-  padding: 0;
-  margin: 0;
   margin-right: 30px;
   width: 170px;
   height: 92px;
@@ -322,12 +320,12 @@
 
 .company-social-link {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  width: 100%;
+  height: 100%;
 }
 
 .company-social-icon {

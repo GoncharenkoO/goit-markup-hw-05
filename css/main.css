@@ -15,10 +15,6 @@
   --primary-white-color: #ffffff;
 }
 
-header {
-  display: block;
-}
-
 body {
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
@@ -66,10 +62,7 @@ p {
 }
 
 /* Применится ко всем тегам с классом a */
-
-.section-menu a,
-.section-contacts a,
-.contacts a {
+a {
   text-decoration: none;
   list-style: none;
 }
@@ -112,10 +105,6 @@ header {
 
 /* nav-section */
 
-.logo {
-  padding: 32px 0;
-}
-
 .section-menu {
   display: flex;
   justify-content: flex-start;
@@ -138,7 +127,9 @@ header {
 }
 
 .finger {
-  padding: 32px 0;
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 a.current.link.finger {
@@ -172,12 +163,19 @@ a.current.link.finger {
 }
 
 .contact {
+  display: flex;
+  align-items: center;
   padding: 32px 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+}
+
+.section-contacts .item:hover,
+.section-contacts .item:focus {
+  color: var(--accent-color);
 }
 
 .contact:hover,
@@ -190,13 +188,13 @@ a.current.link.finger {
   justify-content: flex-start;
   align-items: center;
   margin-right: 10px;
+  cursor: pointer;
   fill: var(--title-text-color);
 }
 
-.icon-mail:hover,
-.icon-mail:focus {
+.contact:hover .icon-mail,
+.contact:focus .icon-mail {
   fill: var(--accent-color);
-  cursor: pointer;
 }
 
 .icon-mobile {
@@ -204,13 +202,13 @@ a.current.link.finger {
   justify-content: flex-start;
   align-items: center;
   margin-right: 10px;
+  cursor: pointer;
   fill: var(--title-text-color);
 }
 
-.icon-mobile:hover,
-.icon-mobile:focus {
+.contact:hover .icon-mobile,
+.contact:focus .icon-mobile {
   fill: var(--accent-color);
-  cursor: pointer;
 }
 
 /* Footer */
@@ -223,19 +221,23 @@ a.current.link.finger {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  text-decoration: none;
 
-  color: var(--accent-color);
   background: #2f303a;
 }
 
-.section-info {
+.keyword {
   display: flex;
+}
+
+.section-info {
+  display: block;
+  justify-content: center;
   align-items: baseline;
-  width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 15px;
+}
+
+.footer-logo {
+  text-decoration: none;
+  color: var(--accent-color);
 }
 
 .footer span {
@@ -309,10 +311,15 @@ a.current.link.finger {
 
 /* Footer social links */
 
+.social-list {
+  display: block;
+  justify-content: center;
+  align-items: baseline;
+}
+
 .footer-text {
   display: flex;
   justify-content: flex-start;
-  padding-top: 72px;
   margin-bottom: 20px;
   font-style: normal;
   font-weight: bold;
@@ -340,6 +347,7 @@ a.current.link.finger {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
   width: 44px;
   height: 44px;
   border-radius: 50%;
