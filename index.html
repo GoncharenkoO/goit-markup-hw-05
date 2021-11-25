@@ -19,6 +19,7 @@
 
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
   </head>
   <body>
     <!-- Header container -->
@@ -63,7 +64,7 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="button primary">Заказать услугу</button>
+          <button type="button" class="button primary" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -73,8 +74,8 @@
           <ul class="section-list">
             <li class="list">
               <div class="section-list-features">
-                <svg class="icon-antenna" width="70" height="70">
-                    <use href="./images/symbol-defs.svg#icon-antenna"></use></svg>
+                <a class="features-link" href=""><svg class="icon-antenna" width="70" height="70">
+                    <use href="./images/symbol-defs.svg#icon-antenna"></use></svg></a>
               </div>
                 <h3 class="title">Внимание к деталям</h3>
                 <p class="text">
@@ -84,8 +85,8 @@
             </li>
             <li class="list">
               <div class="section-list-features">
-                <svg class="icon-antenna" width="70" height="70">
-                  <use href="./images/symbol-defs.svg#icon-clock"></use></svg>
+                <a class="features-link" href=""><svg class="icon-clock" width="70" height="70">
+                  <use href="./images/symbol-defs.svg#icon-clock"></use></svg></a>
               </div>
                 <h3 class="title">Пунктуальность</h3>
                 <p class="text">
@@ -95,8 +96,8 @@
             </li>
             <li class="list">
               <div class="section-list-features">
-                <svg class="icon-antenna" width="70" height="70">
-                    <use href="./images/symbol-defs.svg#icon-diagram"></use></svg>
+                <a class="features-link" href=""><svg class="icon-diagram" width="70" height="70">
+                    <use href="./images/symbol-defs.svg#icon-diagram"></use></svg></a>
               </div>
                 <h3 class="title">Планирование</h3>
                 <p class="text">
@@ -106,10 +107,8 @@
             </li>
             <li class="list">
               <div class="section-list-features">
-                <svg class="icon-antenna" width="70" height="70">
-                  <use
-                    href="./images/symbol-defs.svg#icon-astronaut"
-                  ></use></svg>
+                <a class="features-link" href=""><svg class="icon-astronaut" width="70" height="70">
+                  <use href="./images/symbol-defs.svg#icon-astronaut"></use></svg></a>
               </div>
                 <h3 class="title">Современные технологии</h3>
                 <p class="text">Значимость этих проблем настолько очевидна, что реализация
@@ -125,25 +124,30 @@
         <div class="container works">
           <h2 class="title">Чем мы занимаемся</h2>
 
+          
           <ul class="list">
             <li class="item">
-              <img
-                class="image"
-                width="370"
-                src="images/box.jpg"
-                alt="fullstack"
-              />
+                <img
+                  class="image"
+                  width="370"
+                  src="images/box.jpg"
+                  alt="fullstack"/>
+                 <p class="thumb">Декстопные приложения</p>
             </li>
+           
             <li class="item">
-              <img class="image" width="370" src="images/box2.jpg" alt="ios" />
+                <img class="image" width="370" src="images/box2.jpg" alt="ios" />
+                <p class="thumb">Мобильные приложения</p>
             </li>
+           
             <li class="item">
-              <img
-                class="image"
-                width="370"
-                src="images/box3.jpg"
-                alt="design"
-              />
+                <img
+                  class="image"
+                  width="370"
+                  src="images/box3.jpg"
+                  alt="design"
+                />
+              <p class="thumb">Дизайнерские приложения</p>
             </li>
           </ul>
         </div>
@@ -463,5 +467,16 @@
           </div>
       </div>  
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+         <button data-modal-close class="modal-icon button">
+            <svg  width="18" height="18">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+      </div>
+    </div>
+     <script src="./js/modal.js"></script>
   </body>
 </html>
