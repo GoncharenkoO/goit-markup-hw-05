@@ -263,7 +263,7 @@
   color: var(--title-text-color);
 }
 
-.team-social-links {
+.team-social-list {
   display: flex;
   justify-content: center;
   align-items: center;
