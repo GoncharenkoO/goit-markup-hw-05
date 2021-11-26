@@ -257,6 +257,7 @@ a.current.link.finger {
 }
 
 .footer-logo {
+  font-family: "Raleway", sans-serif;
   text-decoration: none;
   color: var(--accent-color);
 }
