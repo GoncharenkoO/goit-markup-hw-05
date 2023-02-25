@@ -1,0 +1,83 @@
+/****************** Page Filter *******************/
+.section.portfolio {
+	padding-top: 96px;
+}
+.portfolio-title {
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 1.07; /* 60/56 */
+	letter-spacing: 0.02em;
+}
+.filter-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 72px;
+}
+.filter-item:not(:last-child) {
+	margin-right: var(--card-gap);
+}
+.button {
+	min-width: 69px;
+	padding: 12px var(--card-gap);
+	border: var(--border-value);
+
+	font-family: var(--main-font);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5; /* 24/16 */
+	letter-spacing: 0.04em;
+	color: var(--iris-color);
+	background-color: var(--text-cloud-color);
+}
+.button:hover,
+.button:focus {
+	border-color: transparent;
+	color: var(--main-white-color);
+	background-color: var(--ocean-color);
+	box-shadow: var(--btn-filter);
+}
+
+/****************** Page Projects *******************/
+.projects-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+.projects-item {
+	border-radius: var(--radius);
+}
+.projects-item:not(:nth-child(3n)) {
+	margin-right: var(--card-gap);
+}
+.projects-item:not(:nth-last-child(-n + 3)) {
+	margin-bottom: var(--card-gap);
+}
+.projects-link {
+  display: block;
+}
+.projects-link:hover,
+.projects-link:focus {
+	box-shadow: var(--team-shadow);
+}
+.projects-content {
+	padding: 32px 16px;
+	border-right: var(--border-value);
+	border-bottom: var(--border-value);
+	border-left: var(--border-value);
+}
+.projects-content > .title {
+	margin-bottom: 8px;
+
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2; /* 24/20 */
+	letter-spacing: 0.02em;
+	color: var(--primary-color-text);
+}
+.projects-content .text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5; /* 24/16 */
+	letter-spacing: 0.02em;
+	color: var(--secondary-color-text);
+}
