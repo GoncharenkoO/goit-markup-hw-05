@@ -53,11 +53,46 @@
 	margin-bottom: var(--card-gap);
 }
 .projects-link {
-  display: block;
+	display: block;
 }
 .projects-link:hover,
 .projects-link:focus {
 	box-shadow: var(--team-shadow);
+}
+.projects-thumb {
+	position: relative;
+}
+.projects-thumb::before {
+	display: inline-block;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--iris-color);
+	opacity: 0;
+	transition: opacity var(--time-function);
+}
+.overlay {
+	position: absolute;
+    padding: 40px 32px 164px;
+	transform: translateY(-100%);
+	opacity: 0;
+	transition: opacity var(--time-function);
+}
+.projects-link:hover .overlay {
+	opacity: 1;
+}
+.projects-thumb:hover::before {
+	opacity: 1;
+}
+.projects-actions {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5; /* 24/16 */
+	letter-spacing: 0.02em;
+	color: var(--text-cloud-color);
 }
 .projects-content {
 	padding: 32px 16px;
