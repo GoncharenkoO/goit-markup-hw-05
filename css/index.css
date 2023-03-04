@@ -37,6 +37,8 @@
 	color: var(--main-white-color);
 
 	box-shadow: var(--btn-shadow);
+
+	transition: background-color var(--time-function);
 }
 .btn:hover,
 .btn:focus {
@@ -144,6 +146,8 @@
 	height: 40px;
 	border-radius: 50%;
 	background-color: var(--iris-color);
+
+	transition: background-color var(--time-function);
 }
 .team-social-link:hover,
 .team-social-link:focus {
@@ -171,13 +175,15 @@
 	border: 1px solid currentColor;
 	border-radius: var(--radius);
 	color: var(--slate-color);
+
+  transition: color var(--time-function);
+}
+.customers-link:hover,
+.customers-link:focus {
+	color: var(--ocean-color);
 }
 .customers-icon {
 	width: 104px;
 	height: 56px;
 	fill: currentColor;
-}
-.customers-link:hover,
-.customers-link:focus {
-	color: var(--ocean-color);
 }

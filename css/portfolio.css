@@ -29,6 +29,8 @@
 	letter-spacing: 0.04em;
 	color: var(--iris-color);
 	background-color: var(--text-cloud-color);
+
+	transition: color var(--time-function), background-color var(--time-function);
 }
 .button:hover,
 .button:focus {
@@ -54,6 +56,7 @@
 }
 .projects-link {
 	display: block;
+	transition: box-shadow var(--time-function);
 }
 .projects-link:hover,
 .projects-link:focus {
@@ -76,7 +79,7 @@
 }
 .overlay {
 	position: absolute;
-    padding: 40px 32px 164px;
+	padding: 40px 32px 164px;
 	transform: translateY(-100%);
 	opacity: 0;
 	transition: opacity var(--time-function);
@@ -84,7 +87,7 @@
 .projects-link:hover .overlay {
 	opacity: 1;
 }
-.projects-thumb:hover::before {
+.projects-thumb:hover::before  {
 	opacity: 1;
 }
 .projects-actions {
