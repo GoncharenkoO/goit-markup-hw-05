@@ -1,5 +1,5 @@
 :root {
-	--main-white-color: #fff;
+	--main-white-color: #ffffff;
 	--main-font: "Roboto", sans-serif;
 	--secondary-font: "Raleway", sans-serif;
 	--primary-color-text: #2e2f42;
@@ -109,7 +109,7 @@ button {
 }
 .nav-site {
 	display: flex;
-  align-items: center;
+	align-items: center;
 }
 .logo {
 	font-family: var(--secondary-font);
@@ -131,7 +131,7 @@ button {
 	margin-right: 40px;
 }
 .nav-list .link {
-  display: block;
+	display: block;
 	padding: var(--card-gap) 0;
 	font-weight: 500;
 	font-size: 16px;
@@ -147,7 +147,6 @@ button {
 }
 .nav-list .link.current {
 	position: relative;
-	display: block;
 
 	color: var(--ocean-color);
 }
