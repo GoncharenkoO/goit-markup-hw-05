@@ -30,7 +30,7 @@
 	color: var(--iris-color);
 	background-color: var(--text-cloud-color);
 
-	transition: color var(--time-function), background-color var(--time-function);
+	transition: color var(--time-function), background-color var(--time-function), box-shadow var(--time-function), border-color var(--time-function);
 }
 .button:hover,
 .button:focus {
@@ -78,7 +78,8 @@
 	transform: translateY(100%);
 	transition: transform var(--time-function), opacity var(--time-function);
 }
-.projects-link:hover .projects-overlay {
+.projects-link:hover .projects-overlay,
+.projects-link:focus .projects-overlay {
 	transform: translateY(0);
 	opacity: 1;
 }
